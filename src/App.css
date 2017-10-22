@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+* {
+  box-sizing:border-box;
+  margin:0;
+  border:0;
+  padding:0;
+  outline:0;
+  z-index:auto;
+}
+body {
+  font-family:Droid Serif;
+}
+
+button {
+  display:inline-block;
+  margin:0 10px 0 0;
+  padding:15px 45px;
+  font-size:18px;
+  font-weight:bold;
+
+}
+
+button:hover {
+  background-color:black;
+  color:white;
+}
+
+button:active {
+  background-color:orange;
+  color:white;
+}
+
+#pastries {
+  /*border:1px solid black;*/
+  background: url(/img/pastries.png) no-repeat fixed center;
+  background-size:cover;
+  background-clip:content-box;
+  width:100%;
+  min-height:600px;
+}
+
+#beverages {
+  background: url(/img/beverages.png) no-repeat fixed center;
+  background-size:cover;
+  background-clip:content-box;
+  width:100%;
+  min-height:600px;
+}
+
+.banner-top, .banner-mid, .banner-bot {
+  background:white;
+  text-align:center;
+  height:100px;
+  width:100%;
+  padding:20px;
+}
+
+.col {
+background-color:white;
+float:left;
+width:33.33%;
+padding:10px;
+}
+
+.row:after {
+  content: "";
+  display:table;
+  clear:both;
+}
+
+@media (max-width:700px){
+  body {
+    font-size:12px;
+  }
+  .banner-mid, .banner-bot {
+      display:none;
+  }
+  button {
+    display:inline-block;
+    margin:0 10px 0 0;
+    padding:5px 15px;
+    font-size:12px;
+}
+  .col {
+    width:100%;
+  }
+}
