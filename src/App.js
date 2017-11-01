@@ -10,10 +10,9 @@ class App extends Component {
                         <header>
                             <h1>Restaurant</h1>
                         </header>
-                        
+
                         <section>
                             <button>Home</button>
-                            <button>Menu</button>
                             <button>Reserve</button>
                             <button>Contact</button>
                         </section>

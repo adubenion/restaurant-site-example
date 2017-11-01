@@ -32,7 +32,7 @@ button:active {
 
 #pastries {
   /*border:1px solid black;*/
-  background: url(/img/pastries.png) no-repeat fixed center;
+  background: url('https://raw.githubusercontent.com/adubenion/restaurant-site-example/gh-pages/img/beverages.png') no-repeat fixed center;
   background-size:cover;
   background-clip:content-box;
   width:100%;
@@ -40,7 +40,7 @@ button:active {
 }
 
 #beverages {
-  background: url(/img/beverages.png) no-repeat fixed center;
+  background: url('https://raw.githubusercontent.com/adubenion/restaurant-site-example/gh-pages/img/pastries.png') no-repeat fixed center;
   background-size:cover;
   background-clip:content-box;
   width:100%;
