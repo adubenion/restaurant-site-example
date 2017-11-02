@@ -1,14 +1,35 @@
+/*///////
+FONTS
+///////*/
+
 @import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+
+/*///////
+NORMALIZE
+///////*/
+
 * {
+  position:relative;
   box-sizing:border-box;
   margin:0;
   border:0;
   padding:0;
   outline:0;
   z-index:auto;
+  text-decoration:none;
+  list-style:none;
 }
+
+/*///////
+MAIN
+///////*/
+
 body {
   font-family:Droid Serif;
+}
+
+#title {
+  padding:20px;
 }
 
 button {
@@ -17,7 +38,6 @@ button {
   padding:15px 45px;
   font-size:18px;
   font-weight:bold;
-
 }
 
 button:hover {
@@ -31,12 +51,11 @@ button:active {
 }
 
 #pastries {
-  /*border:1px solid black;*/
   background: url('https://raw.githubusercontent.com/adubenion/restaurant-site-example/gh-pages/img/beverages.png') no-repeat fixed center;
   background-size:cover;
   background-clip:content-box;
   width:100%;
-  min-height:600px;
+  min-height:100vh;
 }
 
 #beverages {
@@ -44,14 +63,26 @@ button:active {
   background-size:cover;
   background-clip:content-box;
   width:100%;
-  min-height:600px;
+  min-height:100vh;
 }
 
-.banner-top, .banner-mid, .banner-bot {
+.banner-top {
+  background:white;
+  text-align:center;
+
+  width:100%;
+}
+
+.banner-mid, .banner-bot {
   background:white;
   text-align:center;
   height:100px;
   width:100%;
+  padding:20px;
+}
+
+#menu, #contact {
+  text-align:center;
   padding:20px;
 }
 
@@ -68,18 +99,23 @@ padding:10px;
   clear:both;
 }
 
+/*///////
+MOBILE DEVICES
+///////*/
+
 @media (max-width:700px){
   body {
-    font-size:12px;
+    font-size:14px;
   }
   .banner-mid, .banner-bot {
       display:none;
   }
   button {
     display:inline-block;
-    margin:0 10px 0 0;
-    padding:5px 15px;
-    font-size:12px;
+    margin:0px 0px 10px 0px;
+    padding:10px 20px;
+    font-size:14px;
+    width:25%;
 }
   .col {
     width:100%;
